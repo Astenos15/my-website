@@ -1,0 +1,22 @@
+.skills {
+  background-color: var(--color-grey-lightest);
+  &__grid {
+    gap: 4rem;
+  }
+  &__icon {
+    display: inline-block;
+    font-size: 6.2rem;
+    color: var(--color-primary);
+  }
+
+  h5 {
+    font-size: 1.6rem;
+    color: var(--color-text-dark);
+  }
+
+  p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: var(--color-grey-dark);
+  }
+}

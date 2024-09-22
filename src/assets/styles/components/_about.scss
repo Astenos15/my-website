@@ -1,0 +1,23 @@
+.about {
+  &__grid {
+    gap: 4rem;
+
+    &-img {
+      height: 100%;
+      width: 100%;
+
+      img {
+        width: 80%;
+      }
+    }
+
+    &-text {
+      p {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        color: var(--color-grey-dark);
+      }
+    }
+  }
+}

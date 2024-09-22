@@ -1,0 +1,10 @@
+.container {
+  padding: 9.6rem 20rem;
+
+  @include respond(tab-land) {
+    padding: 9.6rem 12rem;
+  }
+  @include respond(tab-port) {
+    padding: 9.6rem 4rem;
+  }
+}

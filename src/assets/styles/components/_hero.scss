@@ -1,0 +1,31 @@
+.hero {
+  background-color: var(--color-bg-light);
+
+  &__social-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+
+    a:link,
+    a:visited {
+      font-size: 3.2rem;
+      color: var(--color-grey-dark);
+    }
+
+    a:hover,
+    a:active {
+      color: var(--color-text-dark);
+    }
+  }
+
+  &__grid-img {
+    height: 100%;
+    width: 100%;
+
+    @include respond(tab-land) {
+      img {
+        width: 90%;
+      }
+    }
+  }
+}

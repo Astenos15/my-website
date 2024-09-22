@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilitites";
+
+@import "components/navbar";
+@import "components/hero";
+@import "components/title";
+@import "components/skills";
+@import "components/about";
+@import "components/projects";
+@import "components/footer";
+
+@import "layout/container";
+@import "layout/grid";

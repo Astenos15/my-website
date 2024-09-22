@@ -1,0 +1,19 @@
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
+}
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  @include respond(tab-port) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,22 @@
+.footer {
+  background-color: var(--color-primary);
+  min-height: 4rem;
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  p {
+    font-size: 2rem;
+    color: var(--color-text-light);
+    text-transform: capitalize;
+  }
+
+  span {
+    display: inline-block;
+    font-size: 1.6rem;
+    color: var(--color-text-light);
+  }
+}
