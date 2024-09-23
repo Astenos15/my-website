@@ -1,4 +1,5 @@
 .nav {
+  backface-visibility: hidden;
   height: 4rem;
   padding: 4rem 20rem;
   background-color: var(--color-bg-light);
