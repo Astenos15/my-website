@@ -17,32 +17,31 @@
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(-2rem);
+    transform: translateY(-2rem) translate3d(0, 0, 0);
   }
-
   50% {
     opacity: 1;
-    transform: translateY(2rem);
+    transform: translateY(2rem) translate3d(0, 0, 0);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translateY(0) translate3d(0, 0, 0);
   }
 }
 
 @keyframes spinner {
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg) translate3d(0, 0, 0);
   }
 }
 
 .animate {
-  backface-visibility: hidden;
-  animation: backwards moveInBottom 1s;
+  animation: moveInBottom 1s;
+  animation-fill-mode: backwards;
 }
 .animateSpin {
-  backface-visibility: hidden;
-  animation: backwards spinner 1s infinite;
+  animation: spinner 1s infinite;
+  animation-fill-mode: both;
 }
 .delayNav {
   animation-delay: 300ms;

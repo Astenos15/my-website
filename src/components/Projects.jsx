@@ -16,11 +16,15 @@ const Projects = () => {
           return (
             <article
               className={
-                projCardVisible ? "projects__card animate delayShort" : ""
+                projCardVisible
+                  ? "projects__card animate delayShort"
+                  : "projects__card"
               }
               key={id}
             >
-              <img src={img} alt="website thumbnail" />
+              <div className="projects__card-img">
+                <img src={img} alt="website thumbnail" />
+              </div>
               <div className="projects__card-info">
                 <h4>{title}</h4>
                 <p>{text}</p>

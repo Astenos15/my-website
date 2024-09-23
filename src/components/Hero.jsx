@@ -3,17 +3,13 @@ import { socialLinks } from "../data";
 import { useInView } from "react-intersection-observer";
 import Spinner from "./Spinner";
 const Hero = () => {
-  const { ref: heroTextRef, inView: heroTextVisible } = useInView();
-  const { ref: heroImgRef, inView: heroImgVisible } = useInView();
+  const { ref: heroBox, inView: heroBoxVisible } = useInView();
 
   return (
     <section className="hero container">
-      <div className="hero__grid grid-2-cols">
+      <div className="hero__grid grid-2-cols" ref={heroBox}>
         <div
-          className={
-            heroTextVisible ? "hero__grid-text animate delayShort" : ""
-          }
-          ref={heroTextRef}
+          className={heroBoxVisible ? "hero__grid-text animate delayShort" : ""}
         >
           <h1 className="heading-primary mb-xs">i&apos;m raffy</h1>
           <h2 className="heading-secondary mb-xs">Front-End Developer</h2>
@@ -34,11 +30,12 @@ const Hero = () => {
             </ul>
           </div>
         </div>
-        <div
-          className={heroImgVisible ? "hero__grid-img animate delayLong" : ""}
-          ref={heroImgRef}
-        >
-          <img src={heroImg} alt="sketch of a web developer" />
+        <div className="hero__grid-img">
+          <img
+            src={heroImg}
+            alt="sketch of a web developer"
+            className={heroBoxVisible ? "animate delayLong" : ""}
+          />
         </div>
       </div>
     </section>
