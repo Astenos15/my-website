@@ -37,9 +37,11 @@
 }
 
 .animate {
+  backface-visibility: hidden;
   animation: backwards moveInBottom 1s;
 }
 .animateSpin {
+  backface-visibility: hidden;
   animation: backwards spinner 1s infinite;
 }
 .delayNav {
