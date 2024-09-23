@@ -1,4 +1,5 @@
 .grid-2-cols {
+  backface-visibility: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
@@ -7,6 +8,7 @@
   }
 }
 .grid-3-cols {
+  backface-visibility: hidden;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
