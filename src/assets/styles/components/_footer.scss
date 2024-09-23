@@ -1,15 +1,16 @@
 .footer {
   background-color: var(--color-primary);
   min-height: 4rem;
-  padding: 2.4rem;
+  padding: 4rem;
   display: flex;
+
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 
   p {
-    font-size: 2rem;
+    font-size: 2.4rem;
     color: var(--color-text-light);
     text-transform: capitalize;
   }
@@ -18,5 +19,23 @@
     display: inline-block;
     font-size: 1.6rem;
     color: var(--color-text-light);
+  }
+
+  &__links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+
+    a:link,
+    a:visited {
+      display: inline-block;
+      font-size: 2.4rem;
+      color: var(--color-text-light);
+    }
+
+    a:hover,
+    a:active {
+      color: var(--color-black);
+    }
   }
 }
