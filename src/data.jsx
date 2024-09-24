@@ -24,7 +24,7 @@ export const socialLinks = [
     href: "https://github.com/Astenos15/",
     icon: <FaSquareGithub />,
   },
-  { id: nanoid(), href: "mailto:astenos15@gmail.com", icon: <FaEnvelope /> },
+  { id: nanoid(), href: "mailto:wisdomseeker1114@gmail.com", icon: <FaEnvelope /> },
 ];
 
 export const skills = [
@@ -55,7 +55,7 @@ export const projects = [
     url: "https://julie-hansen.netlify.app",
     github: "https://github.com/Astenos15/",
     title: "first project",
-    text: "Real estate website that shows listings and contact form for users who wants to communicate with the agent if needed ",
+    text: "Real estate website that shows listings and contact form for users who wants to communicate with the agent if needed.",
   },
   {
     id: nanoid(),
