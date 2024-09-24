@@ -21,7 +21,9 @@ const Footer = () => {
             const { id, href, icon } = link;
             return (
               <li key={id}>
-                <a href={href}>{icon}</a>
+                <a href={href} target="_blank">
+                  {icon}
+                </a>
               </li>
             );
           })}
