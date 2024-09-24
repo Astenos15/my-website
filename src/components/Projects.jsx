@@ -29,10 +29,10 @@ const Projects = () => {
                 <h4>{title}</h4>
                 <p>{text}</p>
                 <div className="projects__card-info-icon">
-                  <a href={url}>
+                  <a href={url} target="_blank">
                     <TbWorldWww />
                   </a>
-                  <a href={github}>
+                  <a href={github} target="_blank">
                     <FaGithubSquare />
                   </a>
                 </div>
