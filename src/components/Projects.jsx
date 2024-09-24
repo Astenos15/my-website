@@ -17,7 +17,7 @@ const Projects = () => {
             <article
               className={
                 projCardVisible
-                  ? "projects__card animate delayShort"
+                  ? "projects__card animate delayLong"
                   : "projects__card"
               }
               key={id}

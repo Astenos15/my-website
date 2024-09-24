@@ -13,7 +13,11 @@ const Skills = () => {
           return (
             <article key={id}>
               <span
-                className={skillsVisible ? "skills__icon animate delayNav" : ""}
+                className={
+                  skillsVisible
+                    ? "skills__icon animate delayShortest"
+                    : "skills__icon"
+                }
               >
                 {icon}
               </span>

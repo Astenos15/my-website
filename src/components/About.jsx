@@ -11,7 +11,7 @@ const About = () => {
           <img
             src={aboutImg}
             alt="sketch of a web developer"
-            className={aboutVisible ? "animate delayLong" : ""}
+            className={aboutVisible ? "animate delayShort" : ""}
           ></img>
         </div>
         <div className="about__grid-text">

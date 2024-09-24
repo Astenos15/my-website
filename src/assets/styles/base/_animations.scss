@@ -17,21 +17,21 @@
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(-2rem) translate3d(0, 0, 0);
+    transform: translateY(-2rem);
   }
   50% {
     opacity: 1;
-    transform: translateY(2rem) translate3d(0, 0, 0);
+    transform: translateY(2rem);
   }
 
   100% {
-    transform: translateY(0) translate3d(0, 0, 0);
+    transform: translateY(0);
   }
 }
 
 @keyframes spinner {
   to {
-    transform: rotate(360deg) translate3d(0, 0, 0);
+    transform: rotate(360deg);
   }
 }
 
@@ -39,11 +39,8 @@
   animation: moveInBottom 1s;
   animation-fill-mode: backwards;
 }
-.animateSpin {
-  animation: spinner 1s infinite;
-  animation-fill-mode: both;
-}
-.delayNav {
+
+.delayShortest {
   animation-delay: 300ms;
 }
 

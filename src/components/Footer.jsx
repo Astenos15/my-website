@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <section ref={footerBox}>
       <div className="footer">
-        <p className={footerBoxVisible ? "animate delayNav" : ""}>
+        <p className={footerBoxVisible ? "animate delayShortest" : ""}>
           Let&apos;s build something amazing together
         </p>
         <ul

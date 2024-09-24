@@ -5,7 +5,7 @@ const Navbar = () => {
 
   return (
     <nav className="nav" ref={nav}>
-      <div className={navVisible ? "nav__logo animate delayNav" : ""}>
+      <div className={navVisible ? "nav__logo animate delayShortest" : ""}>
         <h3 className="nav__logo-text">
           Web<span>Dev</span>
         </h3>
