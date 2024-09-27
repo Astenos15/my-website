@@ -23,7 +23,7 @@ const Projects = () => {
               key={id}
             >
               <div className="projects__card-img">
-                <img src={img} alt="website thumbnail" />
+                <img src={img} alt="website project thumbnail" />
               </div>
               <div className="projects__card-info">
                 <h4>{title}</h4>
