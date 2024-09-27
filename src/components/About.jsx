@@ -17,10 +17,11 @@ const About = () => {
         <div className="about__grid-text">
           <Title title="code and coffee" />
           <p className={aboutVisible ? "animate delayLong" : ""}>
-            I&apos;m a career shifter developer who enjoys creating things on
-            the internet.I love coding, watching tutorials and coffee.Let me
-            bring your dream website and apps to life.Code your vision into
-            reality—your digital success, one line at a time.
+            I'm a passionate career-shifter developer who thrives on turning
+            ideas into reality online. With a love for coding, tutorials, and
+            coffee, I’m ready to bring your dream website or app to life. Let's
+            transform your vision into a digital success, one line of code at a
+            time.
           </p>
         </div>
       </div>
