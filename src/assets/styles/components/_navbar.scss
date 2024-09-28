@@ -13,10 +13,14 @@
   @include respond(tab-port) {
     padding: 4rem;
   }
+  // @include respond(phone) {
+  //   flex-direction: column;
+  //   gap: 0.5rem;
+  //   align-items: flex-start;
+  // }
+
   @include respond(phone) {
-    flex-direction: column;
-    gap: 0.5rem;
-    align-items: flex-start;
+    justify-content: space-between;
   }
 
   &__logo {
@@ -30,11 +34,45 @@
     }
   }
 
+  &__toggle {
+    margin-left: auto;
+    position: fixed;
+    top: 1.4rem;
+    right: 2.4rem;
+    z-index: 10;
+    background-color: var(--color-bg-light);
+    border-radius: 4px;
+    @include respond(phone-min) {
+      display: none;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      border-radius: 50%;
+      background: none;
+      border: none;
+      font-size: 3rem;
+      color: var(--color-primary);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    button:hover {
+      transform: rotate(90deg);
+    }
+  }
+
   &__links {
     list-style: none;
     display: flex;
     gap: 1rem;
     position: relative;
+
+    @include respond(phone) {
+      display: none;
+    }
 
     a:link,
     a:visited {
