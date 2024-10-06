@@ -10,7 +10,7 @@
   opacity: 0;
   transform: translateX(100%);
   transition: var(--transition);
-  border-radius: 4px;
+  border-radius: 2px;
 
   @include respond(phone-min) {
     display: none;

@@ -1,21 +1,25 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useReducer } from "react";
+import { OPEN_SIDEBAR, CLOSE_SIDEBAR } from "./actions";
+import reducer from "./reducer";
 
 const GlobalContext = createContext();
 
+const initialState = {
+  isSidebarOpen: false,
+};
+
 export const AppProvider = ({ children }) => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [state, dispatch] = useReducer(reducer, initialState);
 
   const openSidebar = () => {
-    setIsSidebarOpen(true);
+    dispatch({ type: OPEN_SIDEBAR });
   };
   const closeSidebar = () => {
-    setIsSidebarOpen(false);
+    dispatch({ type: CLOSE_SIDEBAR });
   };
 
   return (
-    <GlobalContext.Provider
-      value={{ isSidebarOpen, openSidebar, closeSidebar }}
-    >
+    <GlobalContext.Provider value={{ ...state, openSidebar, closeSidebar }}>
       {children}
     </GlobalContext.Provider>
   );

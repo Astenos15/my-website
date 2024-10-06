@@ -41,7 +41,7 @@
     right: 2.4rem;
     z-index: 10;
     background-color: var(--color-bg-light);
-    border-radius: 4px;
+    border-radius: 2px;
     @include respond(phone-min) {
       display: none;
     }
