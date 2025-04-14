@@ -16,7 +16,7 @@ export const links = [
 export const socialLinks = [
   {
     id: nanoid(),
-    href: "https://www.facebook.com/BakitMahalAngBigas",
+    href: "https://www.facebook.com/raffy14.io/",
     icon: <FaSquareFacebook />,
   },
   {
